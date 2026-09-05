@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТитанСпецАвто — Инженерные системы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ===== SWIPER CSS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="header-c">
+            <div class="header-l">
+                <button class="header__menu-toggler js--menu-toggler">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="#hero" class="header__logo">
+                    <img src="images/logo.svg" alt="ТитанСпецАвто" class="header__logo-img">
+                </a>
+            </div>
+
+            <div class="header-m" id="header-menu">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#hero" class="header__nav-btn">Главная</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#services" class="header__nav-btn">Услуги</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#objects" class="header__nav-btn">Объекты</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#docs" class="header__nav-btn">Документы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#about" class="header__nav-btn">О компании</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#contacts" class="header__nav-btn">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-r">
+                <a href="tel:89292952801" class="header__phone">8 929-295-28-01</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO СЛАЙДЕР С ЗАГЛУШКОЙ -->
+<section class="s-hero">
+    <div class="s-hero-slider-c swiper-c">
+        <div class="s-hero-slider swiper">
+            <div class="swiper-wrapper">
+
+                <!-- СЛАЙД 1 -->
+                <div class="s-hero-slider__item swiper-slide">
+                    <img class="s-hero-slider__item-bg" src="images/placeholder.jpg" alt="Монтаж инженерных систем">
+                    <div class="container">
+                        <div class="s-hero-slider__item-content">
+                            <div class="s-hero-slider__item-content-in">
+                                <div class="s-hero-slider__item-title">
+                                    <h1>Монтаж инженерных систем любой сложности</h1>
+                                </div>
+                                <div class="s-hero-slider__item-desc">
+                                    Работаем в ХМАО с 2007 года. Лицензии МЧС и ЖКХ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- СЛАЙД 2 -->
+                <div class="s-hero-slider__item swiper-slide">
+                    <img class="s-hero-slider__item-bg" src="images/placeholder.jpg" alt="Проектирование и монтаж">
+                    <div class="container">
+                        <div class="s-hero-slider__item-content">
+                            <div class="s-hero-slider__item-content-in">
+                                <div class="s-hero-slider__item-title">
+                                    <h1>Проектирование объектов любой сложности</h1>
+                                </div>
+                                <div class="s-hero-slider__item-desc">
+                                    Разработаем ПСД для инженерных систем любого уровня сложности.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- СЛАЙД 3 -->
+                <div class="s-hero-slider__item swiper-slide">
+                    <img class="s-hero-slider__item-bg" src="images/placeholder.jpg" alt="Аварийный выезд 24/7">
+                    <div class="container">
+                        <div class="s-hero-slider__item-content">
+                            <div class="s-hero-slider__item-content-in">
+                                <div class="s-hero-slider__item-title">
+                                    <h1>Аварийный выезд от 2 часов</h1>
+                                </div>
+                                <div class="s-hero-slider__item-desc">
+                                    Устраним аварию в любое время суток.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- КНОПКИ И ПАГИНАЦИЯ -->
+        <div class="s-hero-slider__controls-c swiper-controls-c">
+            <div class="container">
+                <div class="swiper-controls">
+                    <button class="swiper-custom-button swiper-custom-button-prev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="swiper-custom-pagination"></div>
+                    <button class="swiper-custom-button swiper-custom-button-next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- УСЛУГИ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <h3>Наши услуги</h3>
+                <p class="subtitle">Профессионально, с гарантией и полным циклом работ</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Сантехника и отопление</h4>
+                        <p>Водоснабжение, канализация, отопительные системы — под ключ.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Электроснабжение</h4>
+                        <p>Прокладка сетей, заземление, молниезащита, генераторы с АВР.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Вентиляция и кондиционирование</h4>
+                        <p>Проектирование, монтаж, пусконаладка для любых помещений.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Пожарная и охранная сигнализация</h4>
+                        <p>Лицензия МЧС. Монтаж, обслуживание, системы оповещения.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Видеонаблюдение и СКУД</h4>
+                        <p>IP-камеры, удалённый доступ, системы контроля доступа.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Глубокая чистка вентиляции</h4>
+                        <p>Видеообследование, чистка по нормам пожарной безопасности.</p>
+                    </div>
+                </div>
+                <div class="service-card service-card-highlight">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Проектирование объектов любой сложности</h4>
+                        <p>Разработка рабочей документации (ПСД) для инженерных систем любого уровня сложности.</p>
+                        <span class="service-tag">Ключевая услуга</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-placeholder">Фото</div>
+                    <div class="service-body">
+                        <h4>Подготовка к сезонной эксплуатации</h4>
+                        <p>Консервация и расконсервация систем отопления, промывка реагентами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОБЪЕКТЫ -->
+    <section class="objects" id="objects">
+        <div class="container">
+            <h3>Объекты, сданные в эксплуатацию</h3>
+            <p class="subtitle">Более 40 объектов за 11 лет работы</p>
+            <div class="objects-list">
+                <ul>
+                    <li>Гостиница "МИСНЭ", г. Ханты-Мансийск (2008)</li>
+                    <li>Центр медицинской профилактики, г. Ханты-Мансийск (2009)</li>
+                    <li>Сеть ресторанов "Яза-Суши", ресторан "Посейдон" (2010)</li>
+                    <li>Кожевендспанцер, г. Ханты-Мансийск (2010)</li>
+                    <li>ТРК "Оазис Плаза", магазины "Кари", "Адидас", "Рибок" и др., г. Нягань (2011)</li>
+                    <li>Завод по производству особо чистого полярного кварцевого концентрата, г. Нягань (2011-2012)</li>
+                    <li>БУ ХМАО-Югры "ОКБ", г. Ханты-Мансийск (2012)</li>
+                    <li>Пожарное депо в п. Елезарово, п. Половинка, п. Покур (2011-2012)</li>
+                    <li>База УВД, г. Ханты-Мансийск (2013)</li>
+                    <li>МП "Водоканал", г. Ханты-Мансийск (2013)</li>
+                    <li>Ресторан "Старый двор", г. Ханты-Мансийск (2013)</li>
+                    <li>Жилой многоквартирный дом по ул. Дзержинского 41, г. Ханты-Мансийск (2014)</li>
+                    <li>Автомойка "Пять элементов", г. Ханты-Мансийск (2014)</li>
+                    <li>Офтальмология, г. Ханты-Мансийск (2014)</li>
+                    <li>Департамент жилищной политики, г. Ханты-Мансийск (2015)</li>
+                    <li>Негосударственный пенсионный фонд, г. Ханты-Мансийск (2015)</li>
+                    <li>МРЭО ГИБДД, г. Ханты-Мансийск (2015)</li>
+                    <li>Издательский центр, г. Ханты-Мансийск (2015)</li>
+                    <li>Комната помощника губернатора, Дом Правительства и Дума ХМАО-Югры (2016)</li>
+                    <li>Детский сад на 240 мест в п. Горноправдинск (2015-2016)</li>
+                    <li>Жилой многоквартирный дом по ул. Гагарина, 149, г. Ханты-Мансийск (2011-2014)</li>
+                    <li>Жилой микрорайон «Югорская звезда-2», г. Ханты-Мансийск (2013)</li>
+                    <li>Жилой многоквартирный дом по ул. Сирина, мкр. Романовский (2014)</li>
+                    <li>Центр профессиональной патологии по ул. Рознина, 73 (2016)</li>
+                    <li>Административно-торгово-бытовой комплекс, г. Нягань (2015)</li>
+                    <li>Жилой комплекс по ул. Гагарина, 39, г. Ханты-Мансийск (2013-2015)</li>
+                    <li>Жилой многоквартирный дом по ул. Сирина, мкр. Романовский, 2-я очередь (2013-2015)</li>
+                    <li>Стоматологический центр, ул. Сирина, 74 (2015)</li>
+                    <li>Жилой многоквартирный дом по ул. Б. Лосева, 2-я очередь (2017)</li>
+                    <li>Детский сад в п. Ягурьях (2017-2018)</li>
+                    <li>«Красноленинский НПЗ», г. Нягань (2020)</li>
+                    <li>«ЭНЕРГОКОМПЛЕКС», г. Нягань (2020)</li>
+                    <li>Испытательная лаборатория и Склад, Западно-Эргинское месторождение (2020)</li>
+                    <li>Магазин склад, г. Ханты-Мансийск, ул. Мира 122а (2020-2021)</li>
+                    <li>АО «ЮТЭК-Региональные сети», корпус №5 (2021-2023)</li>
+                    <li>Магазин «Эльдорадо», г. Ханты-Мансийск, ул. Энгельса 1 (2021)</li>
+                    <li>БУ "Ханты-Мансийская государственная медицинская академия", ул. Мира, 40 (2021)</li>
+                    <li>Комплекс по производству кварцевого концентрата, 2 этап, г. Нягань (2023)</li>
+                    <li>Комплексная застройка жилого квартала №22, г. Нижневартовск (2020-2023)</li>
+                    <li>Многоквартирный жилой дом по ул. Гагарина 156, г. Ханты-Мансийск (2021-2022)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- ЛИЦЕНЗИИ И ДОКУМЕНТЫ (СЛАЙДЕР) -->
+<section class="s-certificates" id="docs">
+    <div class="container">
+        <div class="s-certificates-in">
+            <div class="s-certificates__head">
+                <h3 class="s-certificates__title">Лицензии и документы</h3>
+                <p class="s-certificates__subtitle">Все необходимые разрешения для работы</p>
+            </div>
+
+            <div class="s-certificates-slider-c swiper-c">
+                <div class="s-certificates-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- СЛАЙД 1 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/accreditation-fire-safety.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Аккредитация в области<br>пожарной безопасности</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 2 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/certificate-nsopb.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Сертификат НСОПБ</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 3 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/certificate-registration.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Свидетельство о регистрации ООО</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 4 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/extract-egrip.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Выписка из ЕГРИП</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 5 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/extract-sro.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Выписка из реестра СРО</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 6 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/license-disinfection.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Лицензия на дезинфекцию</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 7 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/license-fire-safety.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Лицензия на монтаж систем<br>пожарной безопасности</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 8 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/license-mchs-2015.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Лицензия МЧС России<br>с 2015 года</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 9 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/license-mchs-2026.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Лицензия МЧС России<br>обновление 2026</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 10 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/license-zkh.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Лицензия ЖКХ</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 11 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/portfolio.pdf" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Портфолио объектов<br>с 2007 года</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- СЛАЙД 12 -->
+                        <div class="s-certificates-slider__item swiper-slide">
+                            <a href="docs/certificate-cleaning.png" target="_blank" class="s-certificates-slider__item-img-c">
+                                <div class="doc-placeholder">
+                                    <span>📄</span>
+                                    <p>Сертификат на чистку<br>вентиляции</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- КНОПКИ И ПАГИНАЦИЯ (теперь без _style-2, как в hero) -->
+                <div class="s-certificates-slider__controls swiper-controls">
+                    <button class="swiper-custom-button swiper-custom-button-prev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="swiper-custom-pagination"></div>
+                    <button class="swiper-custom-button swiper-custom-button-next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+    <!-- О КОМПАНИИ -->
+    <section class="about" id="about">
+        <div class="container">
+            <h3>О компании «ТитанСпецАвто»</h3>
+            <p><strong>Опыт работы более 11 лет.</strong> Организация работает с 2007 года и является стабильным, надежным деловым партнером.</p>
+            <ul>
+                <li>Лицензии МЧС и ЖКХ</li>
+                <li>Полная обеспеченность транспортом и оборудованием</li>
+                <li>Штат опытных сотрудников с профильным образованием</li>
+                <li>Устойчивое финансовое положение</li>
+                <li>Индивидуальный подход к каждому заказчику</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h3>Свяжитесь с нами</h3>
+            <div class="phone">8 929-295-28-01</div>
+            <p>✉️ titanspets.avto@bk.ru</p>
+            <p class="req">ИНН 8601013270 · ОГРН 1078601001291</p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        © 2026 <span>ТитанСпецАвто</span> — Все права защищены
+    </div>
+</footer>
+
+<!-- ===== SWIPER JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Бургер-меню
+    const toggler = document.querySelector('.header__menu-toggler');
+    const menu = document.getElementById('header-menu');
+    if (toggler && menu) {
+        toggler.addEventListener('click', function() {
+            this.classList.toggle('active');
+            menu.classList.toggle('_menu-is-opened');
+        });
+    }
+
+    // Слайдер Hero (без автопролистывания)
+    const heroSwiper = new Swiper('.s-hero-slider', {
+        loop: true,
+        autoplay: false,
+        pagination: {
+            el: '.s-hero-slider .swiper-custom-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.s-hero-slider .swiper-custom-button-next',
+            prevEl: '.s-hero-slider .swiper-custom-button-prev',
+        },
+    });
+
+    // Слайдер лицензий
+    const certSwiper = new Swiper('.s-certificates-slider', {
+        loop: true,
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+        pagination: {
+            el: '.s-certificates-slider .swiper-custom-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.s-certificates-slider .swiper-custom-button-next',
+            prevEl: '.s-certificates-slider .swiper-custom-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 24,
+            },
+        },
+    });
+});
+</script>
+
+</body>
+</html>
